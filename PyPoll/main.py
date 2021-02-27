@@ -25,11 +25,13 @@ with open(csvpath,newline="", encoding="utf-8") as poll:
 
      header = next(csvreader)
 
-# Count the number of voter ids
+# Count the number of voter ids 
 
      for row in csvreader: 
 
           total_votes +=1
+
+# total number of votes each candidate received
 
           if row[2] =="Khan":
                khan_votes +=1
@@ -41,7 +43,7 @@ with open(csvpath,newline="", encoding="utf-8") as poll:
                otooley_votes +=1
 
 
-
+# percentage of votes each candidate received
      khan_percent = round((khan_votes)/(total_votes) * 100, 2)
      print(khan_percent)
 
@@ -50,6 +52,10 @@ with open(csvpath,newline="", encoding="utf-8") as poll:
 
      otooley_percent = round((otooley_votes)/(total_votes) * 100, 2)
      print(otooley_percent)
+
+
+#print statements
+
 
           
 
