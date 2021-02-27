@@ -45,6 +45,12 @@ with open(csvpath,newline="", encoding="utf-8") as poll:
      khan_percent = round((khan_votes)/(total_votes) * 100, 2)
      print(khan_percent)
 
+     correy_percent = round((correy_votes)/(total_votes) * 100, 2)
+     print(correy_percent)
+
+     otooley_percent = round((otooley_votes)/(total_votes) * 100, 2)
+     print(otooley_percent)
+
           
 
      
