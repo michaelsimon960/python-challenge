@@ -1,7 +1,6 @@
 # Imports
 import os
 import csv
-from pathlib import Path 
 
 # Declare file location
 csvpath = os.path.join('..', 'Resources', 'budget_data.csv')
