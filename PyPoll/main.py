@@ -45,18 +45,29 @@ with open(csvpath,newline="", encoding="utf-8") as poll:
 
 # percentage of votes each candidate received
      khan_percent = round((khan_votes)/(total_votes) * 100, 2)
-     print(khan_percent)
+     
 
      correy_percent = round((correy_votes)/(total_votes) * 100, 2)
-     print(correy_percent)
+     
 
      otooley_percent = round((otooley_votes)/(total_votes) * 100, 2)
-     print(otooley_percent)
+     
+
+     li_percent = round((li_votes)/(total_votes) * 100, 2)
 
 
 #print statements
 
-
+print("Election Results")
+print("-------------------")
+print("Total Votes: " + str(total_votes))
+print("-------------------")
+print("Khan: " + str(khan_percent) + "% " + "(" + str(khan_votes) + ")")
+print("Correy: " + str(correy_percent) + "% " + "(" + str(correy_votes) + ")")
+print("Li: " + str(li_percent) + "% " + "(" + str(li_votes) + ")")
+print("O'Tooley: " + str(otooley_percent) + "% " + "(" + str(otooley_votes) + ")")
+print("-------------------")
+print("Winner: Khan")
           
 
      
