@@ -69,6 +69,31 @@ print("O'Tooley: " + str(otooley_percent) + "% " + "(" + str(otooley_votes) + ")
 print("-------------------")
 print("Winner: Khan")
           
+#Output
+output_file = Path("PyPoll", "analysis", "analysis.txt")
+
+with open(output_file,"w") as file:
+
+
+     file.write("Election Results")
+     file.write("\n")
+     file.write("-------------------")
+     file.write("\n")
+     file.write("Total Votes: " + str(total_votes))
+     file.write("\n")
+     file.write("-------------------")
+     file.write("\n")
+     file.write("Khan: " + str(khan_percent) + "% " + "(" + str(khan_votes) + ")")
+     file.write("\n")
+     file.write("Correy: " + str(correy_percent) + "% " + "(" + str(correy_votes) + ")")
+     file.write("\n")
+     file.write("Li: " + str(li_percent) + "% " + "(" + str(li_votes) + ")")
+     file.write("\n")
+     file.write("O'Tooley: " + str(otooley_percent) + "% " + "(" + str(otooley_votes) + ")")
+     file.write("\n")
+     file.write("-------------------")
+     file.write("\n")
+     file.write("Winner: Khan")
 
      
 
